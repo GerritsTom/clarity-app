@@ -1,0 +1,44 @@
+
+<!--
+  <div class="row">
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Dein Tipp</h5>
+              <div class="card-text">
+                  <form [formGroup]="tippForm" (ngSubmit)="onSubmit()">
+                      <div class="row">
+                          <div class="col-xs-12">
+                            <div class="form-group">
+                              <label for="scoreTeam1">Score {{spiel.team1}}</label>
+                              <input
+                                type="number"
+                                id="scoreTeam1"
+                                formControlName="scoreTeam1"
+                                class="form-control">
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                              <div class="form-group">
+                                <label for="scoreTeam2">Score {{spiel.team2}}</label>
+                                <input
+                                  type="number"
+                                  id="scoreTeam2"
+                                  formControlName="scoreTeam2"
+                                  class="form-control">
+                              </div>
+                            </div>
+                        </div>
+                  </form>
+              </div>
+              <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-outline-dark" (click)="onBack()">Zurück</button>
+                  <button type="button" class="btn btn-outline-dark" (click)="onTippen()"  [disabled]="!tippForm.valid">Tipp speichern</button>
+                </div>
+            </div>
+          </div>
+  </div>
+</div>
+
+-->
+

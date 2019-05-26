@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="clr-col-12">
+    <table class="table table-noborder">
+      <thead>
+        <tr>
+          <th class="left">Gastgeber</th>
+          <th class="left">Gast</th>
+          <th class="left">Spieldatum</th>
+          <th class="left">Ort</th>
+          <th class="left"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let spiel of spiele">
+          <td class="left" style="padding-top: 30px;">{{spiel.team1}}</td>
+          <td class="left" style="padding-top: 30px;">{{spiel.team2}}</td>
+          <td class="left" style="padding-top: 30px;">{{spiel.datum}}</td>
+          <td class="left" style="padding-top: 30px;">{{spiel.ort}}</td>
+          <td><button class="btn btn-outline" (click)="onTippen(spiel)">TIPPEN</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="row">
+  <router-outlet></router-outlet>
+</div>

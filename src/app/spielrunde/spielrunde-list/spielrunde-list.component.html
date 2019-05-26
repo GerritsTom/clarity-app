@@ -1,0 +1,9 @@
+<div class="content-container">
+  <div class="content-area">
+  </div>
+  <div *ngIf="spielrunde$ | async as spielRunde">
+      <clr-vertical-nav *ngFor="let spielRunde of spielRunde; let i = index">
+          <a clrVerticalNavLink [routerLink]="[i+1]" routerLinkActive="active">{{spielRunde.datum}}</a>
+      </clr-vertical-nav>
+  </div>
+</div>
